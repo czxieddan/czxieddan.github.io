@@ -6,7 +6,7 @@ date: 2024-06-06 20:07:21
 tags: [jump, wechat, qq, contact]
 ---
 
-#WeChatID:
+WeChatID:
 
 ```
 lebc66
@@ -14,7 +14,7 @@ lebc66
 
 ---
 
-#QQID: 
+QQID: 
 
 ```
 3141456653
@@ -22,7 +22,7 @@ lebc66
 
 ---
 
-#Douyin(CN) ID:
+Douyin(CN) ID:
 
 ```
 CzXieDdan
@@ -30,7 +30,7 @@ CzXieDdan
 
 ---
 
-#BilibiliID:
+BilibiliID:
 
 ```
 CzXieDdan
@@ -38,7 +38,7 @@ CzXieDdan
 
 ---
 
-#Twitter/X:
+Twitter/X:
 
 ```
 https://x.com/CzXieDdan
@@ -46,7 +46,7 @@ https://x.com/CzXieDdan
 
 ---
 
-#Telegram
+Telegram
 
 ```
 t.me/CzXieDdan
