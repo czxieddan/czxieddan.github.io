@@ -1,45 +1,43 @@
 ---
 title: jump
----
 date: 2024-06-06 20:07:21
----
 tags: [jump, wechat, qq, contact]
 ---
 
-WeChatID:
-
+WeChatID
+---
 ```
 lebc66
 ```
 
 ---
 
-QQID: 
-
+QQID
+---
 ```
 3141456653
 ```
 
 ---
 
-Douyin(CN) ID:
-
+Douyin(CN) ID
+---
 ```
 CzXieDdan
 ```
 
 ---
 
-BilibiliID:
-
+BilibiliID
+---
 ```
 CzXieDdan
 ```
 
 ---
 
-Twitter/X:
-
+Twitter/X
+---
 ```
 https://x.com/CzXieDdan
 ```
@@ -47,7 +45,7 @@ https://x.com/CzXieDdan
 ---
 
 Telegram
-
+---
 ```
 t.me/CzXieDdan
 ```
