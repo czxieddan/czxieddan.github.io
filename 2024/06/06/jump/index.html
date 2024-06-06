@@ -127,6 +127,68 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
@@ -140,7 +202,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">June 6, 2024&nbsp;&nbsp;20:07:21</a>
+                        Date: <a href="#">June 6, 2024&nbsp;&nbsp;14:13:48</a>
                         </span>
                     
                     
@@ -149,7 +211,7 @@
         </header>
 
         <div class="post-content">
-            <p>#WeChatID:</p>
+            <h2 id="date-2024-06-06-20-07-21"><a href="#date-2024-06-06-20-07-21" class="headerlink" title="date: 2024-06-06 20:07:21"></a>date: 2024-06-06 20:07:21</h2><h2 id="tags-jump-wechat-qq-contact"><a href="#tags-jump-wechat-qq-contact" class="headerlink" title="tags: [jump, wechat, qq, contact]"></a>tags: [jump, wechat, qq, contact]</h2><p>#WeChatID:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lebc66</span><br></pre></td></tr></table></figure>
 
 <hr>
@@ -211,16 +273,6 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
-                    
-                        <a href="/tags/jump/"># jump</a>
-                    
-                        <a href="/tags/wechat/"># wechat</a>
-                    
-                        <a href="/tags/qq/"># qq</a>
-                    
-                        <a href="/tags/contact/"># contact</a>
-                    
-                        
                 </span>
             </div>
             <div>
@@ -231,8 +283,8 @@
         </section>
         <section class="post-nav">
             
+                <a class="prev" rel="prev" href="/2024/06/06/hello-template/">Hexo Template</a>
             
-            <a class="next" rel="next" href="/2024/06/06/hello-template/">Hexo Template</a>
             
         </section>
 
