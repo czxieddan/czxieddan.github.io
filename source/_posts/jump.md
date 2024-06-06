@@ -1,6 +1,5 @@
 ---
 title: jump
----
  date: 2024-06-06 20:07:21
  tags: [jump, wechat, qq, contact]
 ---
