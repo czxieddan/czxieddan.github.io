@@ -1,4 +1,4 @@
 ---
 title: category
-dlayout: category
+layout: category
 ---
