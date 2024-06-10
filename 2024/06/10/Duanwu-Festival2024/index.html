@@ -13,7 +13,7 @@
 
 
 
-<title>Hexo Template | czxieddan</title>
+<title>Duanwu-Festival2024 | czxieddan</title>
 
 
 
@@ -40,6 +40,45 @@
 
     
     
+        
+            <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
         
     
 
@@ -288,7 +327,7 @@ function() {
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Hexo Template</h1>
+            <h1 class="post-title">Duanwu-Festival2024</h1>
             
                 <div class="post-meta">
                     
@@ -297,64 +336,30 @@ function() {
 
                     
                         <span class="post-time">
-                        Date: <a href="#">June 10, 2024&nbsp;&nbsp;15:00:04</a>
+                        Date: <a href="#">June 10, 2024&nbsp;&nbsp;23:27:59</a>
                         </span>
                     
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/daily/">daily</a>
+                            
+                        </span>
                     
                 </div>
             
         </header>
 
         <div class="post-content">
-            <blockquote>
-<p>A fast, simple &amp; powerful blog framework, powered by <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a>. Here is the template of it.</p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://mmdjiji.github.io/hexo-template">Demo</a> | <a target="_blank" rel="noopener" href="https://hexo.io/">Official Website</a> | <a target="_blank" rel="noopener" href="https://hexo.io/docs/">Documentation</a> | <a target="_blank" rel="noopener" href="https://github.com/mmdjiji/hexo-template">GitHub</a></p>
-<h2 id="CI-CD"><a href="#CI-CD" class="headerlink" title="CI&#x2F;CD"></a>CI&#x2F;CD</h2><p>This repository uses GitHub Actions for CI&#x2F;CD. You don’t need to build your documents manually. Just commit your documents (then run <code>git push</code>), and then turn on the GitHub Pages in the settings to access your online documents. (For this demo is <a target="_blank" rel="noopener" href="https://mmdjiji.github.io/hexo-template">https://mmdjiji.github.io/hexo-template</a>)</p>
-<h2 id="Attention"><a href="#Attention" class="headerlink" title="!!! Attention !!!"></a>!!! Attention !!!</h2><p>There are two lines to modify in <code>_config.yml</code>:</p>
-<ol>
-<li><p>(At line 16) Set your site url here. For example, if you use GitHub Page, set url as <code>https://username.github.io/project</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://jiji.pro/hexo-template</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>(At line 107) Set your project name here, if your project name is <code>username</code> or <code>username.github.io</code>, just remove it at the end of <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">root:</span> <span class="string">/hexo-template</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p><strong>If you would not like to do so, it cannot work correctly.</strong></p>
-<h2 id="Hexo-Features"><a href="#Hexo-Features" class="headerlink" title="Hexo Features"></a>Hexo Features</h2><ul>
-<li>Blazing fast generating</li>
-<li>Support for GitHub Flavored Markdown and most Octopress plugins</li>
-<li>One-command deploy to GitHub Pages, Heroku, etc.</li>
-<li>Powerful API for limitless extensibility</li>
-<li>Hundreds of <a target="_blank" rel="noopener" href="https://hexo.io/themes/">themes</a> &amp; <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">plugins</a></li>
-</ul>
-<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><p><strong>Install Hexo</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<p>Install with <a target="_blank" rel="noopener" href="https://brew.sh/">brew</a> on macOS and Linux:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install hexo</span><br></pre></td></tr></table></figure>
-
-<p><strong>Setup your blog</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
-
-<p><strong>Start the server</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p><strong>Create a new post</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;Hello Hexo&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>Generate static files</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<h2 id="More-Information"><a href="#More-Information" class="headerlink" title="More Information"></a>More Information</h2><ul>
-<li>Read the <a target="_blank" rel="noopener" href="https://hexo.io/">documentation</a></li>
-<li>Visit the <a target="_blank" rel="noopener" href="https://github.com/hexojs/awesome-hexo">Awesome Hexo</a> list</li>
-<li>Find solutions in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a></li>
-<li>Join discussion on <a target="_blank" rel="noopener" href="https://groups.google.com/group/hexo">Google Group</a>, <a target="_blank" rel="noopener" href="https://discord.gg/teM2Anj">Discord</a>, <a target="_blank" rel="noopener" href="https://gitter.im/hexojs/hexo">Gitter</a> or <a target="_blank" rel="noopener" href="https://t.me/hexojs">Telegram</a></li>
-<li>See the <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">plugin list</a> and the <a target="_blank" rel="noopener" href="https://hexo.io/themes/">theme list</a> on wiki</li>
-<li>Follow <a target="_blank" rel="noopener" href="https://twitter.com/hexojs">@hexojs</a> for latest news</li>
-</ul>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Follows <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo">hexojs&#x2F;hexo</a> , use <a href="LICENSE">MIT License</a>.</p>
-<p><a target="_blank" rel="noopener" href="https://app.fossa.com/projects/git%2Bgithub.com%2Fhexojs%2Fhexo?ref=badge_large"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhexojs%2Fhexo.svg?type=large" alt="FOSSA Status"></a></p>
+            <h6 id="Duanwu-Festival"><a href="#Duanwu-Festival" class="headerlink" title="**** Duanwu-Festival"></a>**** Duanwu-Festival</h6><p>I am very happy to have celebrated the Duanwu Festival today while I am publishing this blog in order to test my project.</p>
+<hr>
+<h6 id="Bless-my-friend"><a href="#Bless-my-friend" class="headerlink" title="**** Bless-my-friend"></a>**** Bless-my-friend</h6><p>It is my honor to celebrate the Duanwu Festival, and as a friend of some of them, I am proud of all the high school students who have finished their high school careers and have come to the perfect ending of their high school lives.</p>
+<hr>
+<h6 id="Return"><a href="#Return" class="headerlink" title="**** Return"></a>**** Return</h6><p>Again we experienced very many special activities during this important festival, but don’t forget that the holiday is coming to an end, so let’s reopen our brains and complete the following math problems.</p>
+<hr>
+<h6 id="Click-on"><a href="#Click-on" class="headerlink" title="**** Click-on"></a>**** Click-on</h6><p><a target="_blank" rel="noopener" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAFDTE-pUNjE2RjMxQjlKUUU4Q0U3MFVFWkcxTFE1Uy4u">Microsoft Forms</a></p>
+<hr>
 
         </div>
 
@@ -369,7 +374,7 @@ function() {
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://czxieddan.github.io/2024/06/10/hello-template/">http://czxieddan.github.io/2024/06/10/hello-template/</a></span>
+                        <span><a href="http://czxieddan.github.io/2024/06/10/Duanwu-Festival2024/">http://czxieddan.github.io/2024/06/10/Duanwu-Festival2024/</a></span>
                     </p>
                 
                 
@@ -392,6 +397,14 @@ function() {
                 <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/duanwu/"># duanwu</a>
+                    
+                        <a href="/tags/festival/"># festival</a>
+                    
+                        <a href="/tags/daily/"># daily</a>
+                    
+                        
                 </span>
             </div>
             <div>
@@ -402,10 +415,8 @@ function() {
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2024/06/10/Duanwu-Festival2024/">Duanwu-Festival2024</a>
             
-            
-            <a class="next" rel="next" href="/2024/06/06/jump/">jump</a>
+            <a class="next" rel="next" href="/2024/06/10/hello-template/">Hexo Template</a>
             
         </section>
 
