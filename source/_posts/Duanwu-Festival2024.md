@@ -1,13 +1,13 @@
 ---
 title: Duanwu-Festival2024
-date: 2024-06-10 23:27:59
+date: 2024-06-10 23:28:59
 tags: [duanwu, festival, daily]
 categories: daily
 mathjax: true # 加入这个声明，这篇文章就会开启mathjax渲染
 
 ---
 
-### Duanwu-Festival
+### The-Duanwu-Festival
 ---
 
 I am very happy to have celebrated the Duanwu Festival today while I am publishing this blog in order to test my project.
