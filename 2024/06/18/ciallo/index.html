@@ -13,7 +13,7 @@
 
 
 
-<title>Hexo Template | czxieddan</title>
+<title>ciallo | czxieddan</title>
 
 
 
@@ -222,73 +222,11 @@ function() {
                 <div class="container">
     
     
-        <div class="post-toc">
-    <div class="tocbot-list">
-    </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
-        <a onclick="go_top()">Back to top</a>
-        <a onclick="go_bottom()">Go to bottom</a>
-    </div>
-</div>
-
-<script>
-    document.ready(
-        function () {
-            tocbot.init({
-                tocSelector: '.tocbot-list',
-                contentSelector: '.post-content',
-                headingSelector: 'h1, h2, h3, h4, h5',
-                collapseDepth: 1,
-                orderedList: false,
-                scrollSmooth: true,
-            })
-        }
-    )
-
-    function expand_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 6,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "collapse_toc()");
-        b.innerHTML = "Collapse all"
-    }
-
-    function collapse_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 1,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "expand_toc()");
-        b.innerHTML = "Expand all"
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-</script>
-    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Hexo Template</h1>
+            <h1 class="post-title">ciallo</h1>
             
                 <div class="post-meta">
                     
@@ -297,64 +235,29 @@ function() {
 
                     
                         <span class="post-time">
-                        Date: <a href="#">June 18, 2024&nbsp;&nbsp;15:22:38</a>
+                        Date: <a href="#">June 18, 2024&nbsp;&nbsp;22:43:11</a>
                         </span>
                     
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/daily/">daily</a>
+                            
+                        </span>
                     
                 </div>
             
         </header>
 
         <div class="post-content">
-            <blockquote>
-<p>A fast, simple &amp; powerful blog framework, powered by <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a>. Here is the template of it.</p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://mmdjiji.github.io/hexo-template">Demo</a> | <a target="_blank" rel="noopener" href="https://hexo.io/">Official Website</a> | <a target="_blank" rel="noopener" href="https://hexo.io/docs/">Documentation</a> | <a target="_blank" rel="noopener" href="https://github.com/mmdjiji/hexo-template">GitHub</a></p>
-<h2 id="CI-CD"><a href="#CI-CD" class="headerlink" title="CI&#x2F;CD"></a>CI&#x2F;CD</h2><p>This repository uses GitHub Actions for CI&#x2F;CD. You don’t need to build your documents manually. Just commit your documents (then run <code>git push</code>), and then turn on the GitHub Pages in the settings to access your online documents. (For this demo is <a target="_blank" rel="noopener" href="https://mmdjiji.github.io/hexo-template">https://mmdjiji.github.io/hexo-template</a>)</p>
-<h2 id="Attention"><a href="#Attention" class="headerlink" title="!!! Attention !!!"></a>!!! Attention !!!</h2><p>There are two lines to modify in <code>_config.yml</code>:</p>
-<ol>
-<li><p>(At line 16) Set your site url here. For example, if you use GitHub Page, set url as <code>https://username.github.io/project</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://jiji.pro/hexo-template</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>(At line 107) Set your project name here, if your project name is <code>username</code> or <code>username.github.io</code>, just remove it at the end of <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">root:</span> <span class="string">/hexo-template</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p><strong>If you would not like to do so, it cannot work correctly.</strong></p>
-<h2 id="Hexo-Features"><a href="#Hexo-Features" class="headerlink" title="Hexo Features"></a>Hexo Features</h2><ul>
-<li>Blazing fast generating</li>
-<li>Support for GitHub Flavored Markdown and most Octopress plugins</li>
-<li>One-command deploy to GitHub Pages, Heroku, etc.</li>
-<li>Powerful API for limitless extensibility</li>
-<li>Hundreds of <a target="_blank" rel="noopener" href="https://hexo.io/themes/">themes</a> &amp; <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">plugins</a></li>
-</ul>
-<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><p><strong>Install Hexo</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<p>Install with <a target="_blank" rel="noopener" href="https://brew.sh/">brew</a> on macOS and Linux:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install hexo</span><br></pre></td></tr></table></figure>
-
-<p><strong>Setup your blog</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
-
-<p><strong>Start the server</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p><strong>Create a new post</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;Hello Hexo&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>Generate static files</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<h2 id="More-Information"><a href="#More-Information" class="headerlink" title="More Information"></a>More Information</h2><ul>
-<li>Read the <a target="_blank" rel="noopener" href="https://hexo.io/">documentation</a></li>
-<li>Visit the <a target="_blank" rel="noopener" href="https://github.com/hexojs/awesome-hexo">Awesome Hexo</a> list</li>
-<li>Find solutions in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a></li>
-<li>Join discussion on <a target="_blank" rel="noopener" href="https://groups.google.com/group/hexo">Google Group</a>, <a target="_blank" rel="noopener" href="https://discord.gg/teM2Anj">Discord</a>, <a target="_blank" rel="noopener" href="https://gitter.im/hexojs/hexo">Gitter</a> or <a target="_blank" rel="noopener" href="https://t.me/hexojs">Telegram</a></li>
-<li>See the <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">plugin list</a> and the <a target="_blank" rel="noopener" href="https://hexo.io/themes/">theme list</a> on wiki</li>
-<li>Follow <a target="_blank" rel="noopener" href="https://twitter.com/hexojs">@hexojs</a> for latest news</li>
-</ul>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Follows <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo">hexojs&#x2F;hexo</a> , use <a href="LICENSE">MIT License</a>.</p>
-<p><a target="_blank" rel="noopener" href="https://app.fossa.com/projects/git%2Bgithub.com%2Fhexojs%2Fhexo?ref=badge_large"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhexojs%2Fhexo.svg?type=large" alt="FOSSA Status"></a></p>
+            <p><button id="play-audio" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">ciallo</button></p>
+<script>
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
 
         </div>
 
@@ -369,7 +272,7 @@ function() {
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://czxieddan.github.io/2024/06/18/hello-template/">http://czxieddan.github.io/2024/06/18/hello-template/</a></span>
+                        <span><a href="http://czxieddan.github.io/2024/06/18/ciallo/">http://czxieddan.github.io/2024/06/18/ciallo/</a></span>
                     </p>
                 
                 
@@ -392,6 +295,14 @@ function() {
                 <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/daily/"># daily</a>
+                    
+                        <a href="/tags/ciallo/"># ciallo</a>
+                    
+                        <a href="/tags/audio/"># audio</a>
+                    
+                        
                 </span>
             </div>
             <div>
@@ -402,10 +313,8 @@ function() {
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2024/06/18/ciallo/">ciallo</a>
             
-            
-            <a class="next" rel="next" href="/2024/06/10/Duanwu-Festival2024/">Duanwu-Festival2024</a>
+            <a class="next" rel="next" href="/2024/06/18/hello-template/">Hexo Template</a>
             
         </section>
 
