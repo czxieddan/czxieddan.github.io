@@ -5,8 +5,25 @@
         <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
         <a onclick="go_top()">Back to top</a>
         <a onclick="go_bottom()">Go to bottom</a>
+        <a onclick="ciallo()">ciallo</a>
     </div>
 </div>
+
+<button id="play-audio" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Ciallo～(∠・ω< )⌒★</button>
+
+<script>
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+<script>
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('ciallo').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
 
 <script>
     document.ready(
