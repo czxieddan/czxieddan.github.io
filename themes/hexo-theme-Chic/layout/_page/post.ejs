@@ -2,6 +2,7 @@
     <%# toc %>
     <%if(theme.post_toc_enable && toc(page.content).length!==0){%>
         <%- partial('_partial/toc') %>
+        <%- partial('_partial/audioer',{cache: true}) %>
     <%}%>
 
     <%# article %>
