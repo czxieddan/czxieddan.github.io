@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="czxieddan">
+
+
+
+
+
+<title>ciallo | czxieddan</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js" type="28066f3f2e376df6f4683f01-text/javascript"></script>
+    
+    <script src="/js/tocbot.min.js" type="28066f3f2e376df6f4683f01-text/javascript"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.2.0"><script nonce="8c7aec89-eb5d-482d-8af8-79f79b84c344">try{(function(w,d){!function(U,V,W,X){U[W]=U[W]||{};U[W].executed=[];U.zaraz={deferred:[],listeners:[]};U.zaraz._v="5705";U.zaraz.q=[];U.zaraz._f=function(Y){return async function(){var Z=Array.prototype.slice.call(arguments);U.zaraz.q.push({m:Y,a:Z})}};for(const $ of["track","set","debug"])U.zaraz[$]=U.zaraz._f($);U.zaraz.init=()=>{var ba=V.getElementsByTagName(X)[0],bb=V.createElement(X),bc=V.getElementsByTagName("title")[0];bc&&(U[W].t=V.getElementsByTagName("title")[0].text);U[W].x=Math.random();U[W].w=U.screen.width;U[W].h=U.screen.height;U[W].j=U.innerHeight;U[W].e=U.innerWidth;U[W].l=U.location.href;U[W].r=V.referrer;U[W].k=U.screen.colorDepth;U[W].n=V.characterSet;U[W].o=(new Date).getTimezoneOffset();if(U.dataLayer)for(const bg of Object.entries(Object.entries(dataLayer).reduce(((bh,bi)=>({...bh[1],...bi[1]})),{})))zaraz.set(bg[0],bg[1],{scope:"page"});U[W].q=[];for(;U.zaraz.q.length;){const bj=U.zaraz.q.shift();U[W].q.push(bj)}bb.defer=!0;for(const bk of[localStorage,sessionStorage])Object.keys(bk||{}).filter((bm=>bm.startsWith("_zaraz_"))).forEach((bl=>{try{U[W]["z_"+bl.slice(7)]=JSON.parse(bk.getItem(bl))}catch{U[W]["z_"+bl.slice(7)]=bk.getItem(bl)}}));bb.referrerPolicy="origin";bb.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(U[W])));ba.parentNode.insertBefore(bb,ba)};["complete","interactive"].includes(V.readyState)?zaraz.init():U.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
+
+<body>
+    <script type="28066f3f2e376df6f4683f01-text/javascript">
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+<script type="28066f3f2e376df6f4683f01-text/javascript">
+<!--
+  Use an <twitter-post></twitter-post> HTML element to tell Zaraz where to put the embedded content.
+  
+  Add a tweet-id attribute that contains the tweet's id number, as shown in the tweet’s URL 
+  -->
+  
+  <twitter-post tweet-id="1754336034228171055"></twitter-post>
+} ();
+</script>
+  
+
+<script type="28066f3f2e376df6f4683f01-text/javascript">
+!
+function() {
+    function n(n, e, t) {
+        return n.getAttribute(e) || t
+    }
+    function e(n) {
+        return document.getElementsByTagName(n)
+    }
+    function t() {
+        var t = e("script"),
+        o = t.length,
+        i = t[o - 1];
+        return {
+            l: o,
+            z: n(i, "zIndex", -1),     //置于主页面背后
+            o: n(i, "opacity", .5),     //线条透明度
+            c: n(i, "color", "0,0,0"),  //线条颜色
+            n: n(i, "count", 100)    //线条数量
+        }
+    }
+    function o() {
+        a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+        c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+    }
+    function i() {
+        r.clearRect(0, 0, a, c);
+        var n, e, t, o, m, l;
+        s.forEach(function(i, x) {
+            for (i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++) n = u[e],
+            null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y, l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m), t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
+        }),
+        x(i)
+    }
+    var a, c, u, m = document.createElement("canvas"),
+    d = t(),
+    l = "c_n" + d.l,
+    r = m.getContext("2d"),
+    x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+    function(n) {
+        window.setTimeout(n, 1e3 / 45)
+    },
+    w = Math.random,
+    y = {
+        x: null,
+        y: null,
+        max: 2e4
+    };
+    m.id = l,
+    m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o,
+    e("body")[0].appendChild(m),
+    o(),
+    window.onresize = o,
+    window.onmousemove = function(n) {
+        n = n || window.event,
+        y.x = n.clientX,
+        y.y = n.clientY
+    },
+    window.onmouseout = function() {
+        y.x = null,
+        y.y = null
+    };
+    for (var s = [], f = 0; d.n > f; f++) {
+        var h = w() * a,
+        g = w() * c,
+        v = 2 * w() - 1,
+        p = 2 * w() - 1;
+        s.push({
+            x: h,
+            y: g,
+            xa: v,
+            ya: p,
+            max: 6e3
+        })
+    }
+    u = s.concat([y]),
+    setTimeout(function() {
+        i()
+    },
+    100)
+} ();
+</script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">czxieddan&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">czxieddan&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="if (!window.__cfRLUnblockHandlers) return false; mobileBtn()" data-cf-modified-28066f3f2e376df6f4683f01-="">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script type="28066f3f2e376df6f4683f01-text/javascript">
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">ciallo</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">czxieddan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">June 18, 2024&nbsp;&nbsp;22:43:11</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/daily/">daily</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <button id="play-audio" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Ciallo～(∠・ω&lt; )⌒★</button>
+<script type="28066f3f2e376df6f4683f01-text/javascript">
+  var audio = new Audio('audio/ciallo.mp3');
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>czxieddan</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://czxieddan.github.io/2024/06/18/ciallo/">http://czxieddan.github.io/2024/06/18/ciallo/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/daily/"># daily</a>
+                    
+                        <a href="/tags/ciallo/"># ciallo</a>
+                    
+                        <a href="/tags/audio/"># audio</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2024/06/10/Duanwu-Festival2024/">Duanwu-Festival2024</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+<script type="28066f3f2e376df6f4683f01-text/javascript">
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© czxieddan | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+  <script type="28066f3f2e376df6f4683f01-text/javascript">
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+
+</footer>
+
+
+            <button id="play-audio" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Ciallo～(∠・ω< )⌒★</button>
+
+<script type="28066f3f2e376df6f4683f01-text/javascript">
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+    </div>
+
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="28066f3f2e376df6f4683f01-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"89cdac359a9d2ad8","r":1,"version":"2024.4.1","token":"ab6bf42adcff4e5ea424fd73fa961bc6"}' crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+
+</html>
