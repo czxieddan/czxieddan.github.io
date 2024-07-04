@@ -19,6 +19,6 @@ You can contact me for feedback on any issues with the project.
 
 2.[Telegram](t.me/CzXieDdan)
 
-3.[**Official** Feedback Email](czxieddan@czxieddan.top)
+3.**Official** Feedback Email:czxieddan@czxieddan.top
 
-4.[**Personal** e-mail _(backup)_](czxieddan@gmail.com)
+4.**Personal** e-mail _(backup)_:czxieddan@gmail.com
