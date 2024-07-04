@@ -197,28 +197,28 @@
     {
       "icon_id": "1899068",
       "name": "Telegram",
-      "font_class": "iconfont icon-telegram",
+      "font_class": "telegram",
       "unicode": "e731",
       "unicode_decimal": 59185
     },
     {
       "icon_id": "3323558",
       "name": "Bilibili",
-      "font_class": "iconfont icon-bilibili-",
+      "font_class": "bilibili-",
       "unicode": "e502",
       "unicode_decimal": 58626
     },
     {
       "icon_id": "18166694",
       "name": "Douyin",
-      "font_class": "iconfont icon-douyin",
+      "font_class": "douyin",
       "unicode": "e8db",
       "unicode_decimal": 59611
     },
     {
       "icon_id": "21163412",
       "name": "URL",
-      "font_class": "iconfont icon-xingzhuang43",
+      "font_class": "xingzhuang43",
       "unicode": "e660",
       "unicode_decimal": 58976
     }
