@@ -193,6 +193,34 @@
       "font_class": "github",
       "unicode": "e88d",
       "unicode_decimal": 59533
+    },
+    {
+      "icon_id": "1899068",
+      "name": "telegram",
+      "font_class": "telegram",
+      "unicode": "e731",
+      "unicode_decimal": 59185
+    },
+    {
+      "icon_id": "3323558",
+      "name": "bilibili",
+      "font_class": "bilibili-",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "18166694",
+      "name": "抖音",
+      "font_class": "douyin",
+      "unicode": "e8db",
+      "unicode_decimal": 59611
+    },
+    {
+      "icon_id": "21163412",
+      "name": "URL",
+      "font_class": "xingzhuang43",
+      "unicode": "e660",
+      "unicode_decimal": 58976
     }
   ]
 }
