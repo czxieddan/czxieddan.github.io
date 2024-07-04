@@ -77,7 +77,15 @@ Follows [hexojs/hexo](https://github.com/hexojs/hexo) , use [MIT License](LICENS
 ### Introduction
 An elegant, powerful, easy-to-read Hexo theme.
 
+
 ### LICENSE
 Chic © [@Sirice](https://github.com/Siricee)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+
+## czxieddan/czxieddan.github.io
+_czxiddan_
+### en to u  Mōningu giku
+> [!CAUTION]
+> Disclaimer: The images used in this project [**en to u Mōningu giku**](https://github.com/czxieddan/czxieddan.github.io/blob/main/pictures/main/github/czxieddan/png/photos/en_to_u_Moningu_giku.png" alt="en_to_u_Moningu_giku) protected by [**copyright**](https://www.tj-copyright.com/page/s/search/index?ZPZSHHZPMC=%E6%B4%A5%E4%BD%9C%E7%99%BB%E5%AD%97-2024-F-10003189&pageNo=1&pageSize=10) , not in the project [**LGPL-2.1 license**](https://github.com/czxieddan/czxieddan.github.io?tab=LGPL-2.1-1-ov-file#) open source agreement within the scope of any individual and organization is strictly prohibited from misappropriation , **violators will be punished** .
