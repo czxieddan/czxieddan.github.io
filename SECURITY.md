@@ -9,8 +9,8 @@ currently being supported with security updates.
 | ------- | ------------------ |
 | 0.1.x   | :white_check_mark: |
 | 0.0.x   | :x:                |
-| 0.0.x-alpha   | :white_check_mark: |
-| < 0.0   | :x:                |
+| 0.1.x-alpha   | :white_check_mark: |
+| < 0.1.x-alpha   | :x:                |
 
 ## Reporting a Vulnerability
 
