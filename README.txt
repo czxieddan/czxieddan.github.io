@@ -18,14 +18,14 @@ There are two lines to modify in `_config.yml`:
 url: https://jiji.pro/hexo-template
 ```
 
-2. Set your project name at **line 107**, if your project name is `username` or `username.github.io`, just remove it at the end of `_config.yml`:
+2. Set your project name at **line 107**, if your project name is `username` or `username.github.io`， just remove it at the end of `_config.yml`:
 ```yml
 root: /hexo-template
 ```
 
 ## CI/CD
 
-This repository uses GitHub Actions for CI/CD. You don't need to build your documents manually. Just commit your documents (then run `git push`), and then turn on the GitHub Pages in the settings to access your online documents. (For this demo is https://mmdjiji.github.io/hexo-template)
+This repository uses GitHub Actions for CI/CD. You don't need to build your documents manually. Just commit your documents (then run `git push`)， and then turn on the GitHub Pages in the settings to access your online documents. (For this demo is https://mmdjiji.github.io/hexo-template)
 
 ## Hexo Features
 
