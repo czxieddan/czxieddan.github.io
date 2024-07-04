@@ -2,13 +2,10 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The **latest version** that has been released is **v0.1.0-alpha**, below are the currently supported versions, versions that are **too old** are **not supported**.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.1.x   | :white_check_mark: |
-| 0.0.x   | :x:                |
 | 0.1.x-alpha   | :white_check_mark: |
 | < 0.1.x-alpha   | :x:                |
 
@@ -16,6 +13,12 @@ currently being supported with security updates.
 
 Use this section to tell people how to report a vulnerability.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+You can contact me for feedback on any issues with the project.
+
+1.[Twitter/X](https:twitter.com/CzXieDdan)
+
+2.[Telegram](t.me/CzXieDdan)
+
+3.[**Official** Feedback Email](czxieddan@czxieddan.top)
+
+4.[**Personal** e-mail _(backup)_](czxieddan@gmail.com)
