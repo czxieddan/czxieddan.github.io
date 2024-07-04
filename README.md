@@ -42,7 +42,7 @@ I would like to thank the providers of the above open source projects.
 - Find solutions in [troubleshooting](https://hexo.io/docs/troubleshooting.html)
 - Join discussion on [Google Group](https://groups.google.com/group/hexo), [Discord](https://discord.gg/teM2Anj), [Gitter](https://gitter.im/hexojs/hexo) or [Telegram](https://t.me/hexojs)
 - See the [plugin list](https://hexo.io/plugins/) and the [theme list](https://hexo.io/themes/) on wiki
-- Follow [@hexojs](https://twitter.com/hexojs) for latest news
+- 关注 [@hexojs](https://twitter.com/hexojs) for latest news
 
 ### License
 
@@ -88,4 +88,4 @@ Chic © [@Sirice](https://github.com/Siricee)
 _czxiddan_
 ### en to u  Mōningu giku
 > [!CAUTION]
-> Disclaimer: The images used in this project [**en to u Mōningu giku**](https://github.com/czxieddan/czxieddan.github.io/blob/main/pictures/main/github/czxieddan/png/photos/en_to_u_Moningu_giku.png" alt="en_to_u_Moningu_giku) protected by [**copyright**](https://www.tj-copyright.com/page/s/search/index?ZPZSHHZPMC=%E6%B4%A5%E4%BD%9C%E7%99%BB%E5%AD%97-2024-F-10003189&pageNo=1&pageSize=10) , not in the project [**LGPL-2.1 license**](https://github.com/czxieddan/czxieddan.github.io?tab=LGPL-2.1-1-ov-file#) open source agreement within the scope of any individual and organization is strictly prohibited from misappropriation , **violators will be punished** .
+> Disclaimer: The images used in this project [**en to u Mōningu giku**](https://github.com/czxieddan/czxieddan.github.io/blob/main/pictures/main/github/czxieddan/png/photos/en_to_u_Moningu_giku.png) protected by [**copyright**](https://www.tj-copyright.com/page/s/search/index?ZPZSHHZPMC=%E6%B4%A5%E4%BD%9C%E7%99%BB%E5%AD%97-2024-F-10003189&pageNo=1&pageSize=10) , not in the project [**LGPL-2.1 license**](https://github.com/czxieddan/czxieddan.github.io?tab=LGPL-2.1-1-ov-file#) open source agreement within the scope of any individual and organization is strictly prohibited from misappropriation , **violators will be punished** .
