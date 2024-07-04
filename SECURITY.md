@@ -15,9 +15,9 @@ Use this section to tell people how to report a vulnerability.
 
 You can contact me for feedback on any issues with the project.
 
-1.[Twitter/X](https:twitter.com/CzXieDdan)
+1.[Twitter/X](https://twitter.com/CzXieDdan)
 
-2.[Telegram](t.me/CzXieDdan)
+2.[Telegram](https://t.me/CzXieDdan)
 
 3.**Official** Feedback Email:czxieddan@czxieddan.top
 
