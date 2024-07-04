@@ -21,4 +21,4 @@ You can contact me for feedback on any issues with the project.
 
 3.**Official** Feedback Email:czxieddan@czxieddan.top
 
-4.**Personal** e-mail _(backup)_:czxieddan@gmail.com
+4.**Personal** Email _(backup)_:czxieddan@gmail.com
