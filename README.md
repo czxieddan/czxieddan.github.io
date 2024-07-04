@@ -3,7 +3,7 @@
 
 [_**czxieddan.top**(backup)_](https://czxieddan.github.io)
 ## czxieddan.github.io
-<img src="https://github.com/czxieddan/czxieddan.github.io/blob/main/themes/hexo-theme-Chic/source/image/czxieddan.jpg" alt="czxieddan logo" width="100" height="100" align="right" />
+<img src="[https://github.com/czxieddan/czxieddan.github.io/blob/main/pictures/main/github/czxieddan/png/photos/en_to_u_Moningu_giku.png" alt="czxieddan logo" width="100" height="100" align="right" />
 
 _CzXDd_
 
@@ -49,3 +49,35 @@ I would like to thank the providers of the above open source projects.
 Follows [hexojs/hexo](https://github.com/hexojs/hexo) , use [MIT License](LICENSE).
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhexojs%2Fhexo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhexojs%2Fhexo?ref=badge_large)
+
+## Chic
+
+<h1 align="center"><a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic Theme</a></h1>
+
+<p align="center">
+<img src="https://i.loli.net/2019/06/12/5d006bd289aa325037.png" alt="Chic theme">
+</p>
+
+> Chic, French word meaning 'Elegant' in English.
+
+<p align="center">
+<img alt="Author" src="https://img.shields.io/badge/Author-Sirice-lightgray.svg"/>
+<img alt="Node" src="https://img.shields.io/badge/Node-6.0%2B-43853d.svg"/>
+<img alt="Hexo" src="https://img.shields.io/badge/Hexo-3.0+-0e83cd.svg"/>
+<img alt="Device" src="https://img.shields.io/badge/Device-responsive-orange.svg"/>
+<img alt="Build Status" src="https://img.shields.io/badge/build-passing-brightgreen"/>
+</p>
+
+### Documentation language
+
+[README-EN](https://github.com/Siricee/hexo-theme-Chic/blob/master/README.md)
+
+[README-CN](https://github.com/Siricee/hexo-theme-Chic/blob/master/README-CN.md)
+
+### Introduction
+An elegant, powerful, easy-to-read Hexo theme.
+
+### LICENSE
+Chic © [@Sirice](https://github.com/Siricee)
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
