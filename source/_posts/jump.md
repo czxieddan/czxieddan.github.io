@@ -18,7 +18,7 @@ QQID
 ```
 3141456653
 ```
-[QQ](https://czxieddan.top/project/hs/QQ/)
+[QQ](https://czxieddan.top/project/hs/qq/)
 ---
 
 Douyin(CN) ID
