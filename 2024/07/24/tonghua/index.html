@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/css/iconfont/iconfont.css">
 
 
-<title>tag | czxieddan</title>
+<title>jump | czxieddan</title>
 
 
 
@@ -222,37 +222,194 @@ function() {
     }
 </script>
             <div class="main">
-                
-
-    <div class="container">
-        <div class="post-wrap tags">
-            <h2 class="post-title">-&nbsp;Tag Cloud&nbsp;-</h2>
-
-            <div class="tag-cloud-tags">
-                
-                    <a href="/tags/duanwu/">duanwu<small>(1)</small></a>
-                
-                    <a href="/tags/festival/">festival<small>(1)</small></a>
-                
-                    <a href="/tags/daily/">daily<small>(1)</small></a>
-                
-                    <a href="/tags/jump/">jump<small>(1)</small></a>
-                
-                    <a href="/tags/wechat/">wechat<small>(1)</small></a>
-                
-                    <a href="/tags/qq/">qq<small>(1)</small></a>
-                
-                    <a href="/tags/contact/">contact<small>(1)</small></a>
-                
-                    <a href="/tags/comic/">comic<small>(1)</small></a>
-                
-                    <a href="/tags/comiccon/">comiccon<small>(1)</small></a>
-                
-                    <a href="/tags/tonghua/">tonghua<small>(1)</small></a>
-                
-            </div>
-        </div>
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
     </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+        <a onclick="ciallo()">ciallo</a>
+    </div>
+</div>
+
+
+<script>
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+<script>
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('ciallo').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+
+        <script>
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
+
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">jump</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">czxieddan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 24, 2024&nbsp;&nbsp;23:59:59</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/tonghua/">tonghua</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="Tianjin-Tonghua-Comic-con-1-zh"><a href="#Tianjin-Tonghua-Comic-con-1-zh" class="headerlink" title="Tianjin-Tonghua-Comic-con-1-zh"></a><a target="_blank" rel="noopener" href="https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/tonghua/zh/index.html">Tianjin-Tonghua-Comic-con-1-zh</a></h2><h2 id="Tianjin-Tonghua-Comic-con-1-en"><a href="#Tianjin-Tonghua-Comic-con-1-en" class="headerlink" title="Tianjin-Tonghua-Comic-con-1-en"></a><a target="_blank" rel="noopener" href="https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/tonghua/en/index.html">Tianjin-Tonghua-Comic-con-1-en</a></h2>
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>czxieddan</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://czxieddan.github.io/2024/07/24/tonghua/">http://czxieddan.github.io/2024/07/24/tonghua/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/comic/"># comic</a>
+                    
+                        <a href="/tags/comiccon/"># comiccon</a>
+                    
+                        <a href="/tags/tonghua/"># tonghua</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2024/07/09/jump/">jump</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+<script>
+  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  document.getElementById('play-audio').addEventListener('click', function() {
+    audio.play();
+  });
+</script>
 
 
 
