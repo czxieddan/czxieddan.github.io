@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/css/iconfont/iconfont.css">
 
 
-<title>tag | czxieddan</title>
+<title>Tianjin-Tonghua-Comic-con-1-en | czxieddan</title>
 
 
 
@@ -44,6 +44,10 @@
     
     
         
+
+
+
+        
     
 
 
@@ -68,16 +72,7 @@
         })();
     </script>
 
-<script>
-<!--
-  Use an <twitter-post></twitter-post> HTML element to tell Zaraz where to put the embedded content.
-  
-  Add a tweet-id attribute that contains the tweet's id number, as shown in the tweet’s URL 
-  -->
-  
-  <twitter-post tweet-id="1754336034228171055"></twitter-post>
-} ();
-</script>
+
   
 
 <script>
@@ -222,31 +217,129 @@ function() {
     }
 </script>
             <div class="main">
-                
-
-    <div class="container">
-        <div class="post-wrap tags">
-            <h2 class="post-title">-&nbsp;Tag Cloud&nbsp;-</h2>
-
-            <div class="tag-cloud-tags">
-                
-                    <a href="/tags/duanwu/">duanwu<small>(1)</small></a>
-                
-                    <a href="/tags/festival/">festival<small>(1)</small></a>
-                
-                    <a href="/tags/daily/">daily<small>(1)</small></a>
-                
-                    <a href="/tags/jump/">jump<small>(1)</small></a>
-                
-                    <a href="/tags/wechat/">wechat<small>(1)</small></a>
-                
-                    <a href="/tags/qq/">qq<small>(1)</small></a>
-                
-                    <a href="/tags/contact/">contact<small>(1)</small></a>
-                
-            </div>
-        </div>
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
     </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+        <a onclick="Tianjin-Tonghua-Comic-con-1-en()">Tianjin-Tonghua-Comic-con-1-en</a>
+    </div>
+</div>
+
+
+
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+
+        
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Tianjin-Tonghua-Comic-con-1-en</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">czxieddan</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 24, 2024&nbsp;&nbsp;23:59:59</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/tonghua/">tonghua</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <li><p>This article is not available in English at this time</p></li>
+            <li><a target="_blank" rel="noopener" href="https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/tonghua/zh">View Chinese version</a></li>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>czxieddan</span>
+                    </p>
+                
+            </section>
+        
+        
+       
+
+
+    </article>
+</div>
+
+
 
 
 
@@ -255,13 +348,7 @@ function() {
     <div class="copyright">
         <span>© czxieddan | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
-  <script>
-  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
-  document.getElementById('play-audio').addEventListener('click', function() {
-    audio.play();
-  });
-</script>
-
+  
 
 </footer>
 
