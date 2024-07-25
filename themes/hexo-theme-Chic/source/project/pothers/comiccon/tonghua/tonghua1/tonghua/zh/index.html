@@ -319,6 +319,8 @@ function() {
         <div class="post-content">
             <h2 id="1-天津瞳画动漫展"><a href="#1-天津瞳画动漫展" class="headerlink" title="1. 天津瞳画动漫展"></a>1. 天津瞳画动漫展</h2><ul>
                 <li><strong>点名批评</strong></li>
+                <li><a target="_blank" rel="noopener" href="https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/tonghua/zh">View Chinese version</a></li>
+                <li><a target="_blank" rel="noopener" href="https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/tonghua/en">View English version</a></li>
             </ul>
             <h2 id="2-关于空调问题"><a href="#2-关于空调问题" class="headerlink" title="2. 关于空调问题"></a>2. 关于空调问题</h2><ul>
                 <h3 id="1-空调耗电耗费问题"><a href="#1-空调耗电耗费问题" class="headerlink" title="1. 空调耗电耗费问题"></a>1. 空调耗电耗费问题</h3><ul>
@@ -375,16 +377,24 @@ function() {
                     <li><p>参考资料:点击下方按钮以下载参考资料</p></li>
                     <button id="downloadBtn" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">下载参考资料</button>
 
-                        <script>
-                                document.getElementById('downloadBtn').addEventListener('click', function() {
+                    <script>
+                        document.getElementById('downloadBtn').addEventListener('click', function() {
+                            const files = [
+                                'https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/photos/tonghua1-1/优先看此·处.txt',
+                                'https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/photos/tonghua1-1/1-1.txt',
+                                'https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/photos/tonghua1-1/1-2.txt'
+                            ];
+                
+                            files.forEach(file => {
                                 const link = document.createElement('a');
-                                link.href = 'https://czxieddan.top/project/pothers/comiccon/tonghua/tonghua1/photos/tonghua1-1.zip'; // 替换为你要下载的文件路径
-                                link.download = 'tonghua1-1.zip'; // 替换为你要下载的文件名
+                                link.href = file;
+                                link.download = file.split('/').pop();
                                 document.body.appendChild(link);
                                 link.click();
                                 document.body.removeChild(link);
                             });
-                        </script>
+                        });
+                    </script>
                 </ul>
             </ul>
 
@@ -425,7 +435,7 @@ function() {
             <button id="play-audio" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Ciallo～(∠・ω< )⌒★</button>
 
 <script>
-  var audio = new Audio('audio/ciallo.mp3'); // 替换为您的音频文件URL
+  var audio = new Audio('https://czxieddan.top/audio/ciallo.mp3'); // 替换为您的音频文件URL
   document.getElementById('play-audio').addEventListener('click', function() {
     audio.play();
   });
