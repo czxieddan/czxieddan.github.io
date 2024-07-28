@@ -48,6 +48,28 @@
 
 
 
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
     <style>
         .static-banner {
             width: 100%;
@@ -75,33 +97,13 @@
             100% { transform: translateX(-100%); }
         }
     </style>
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-<body>
-    <script>
-        // this function is used to check current theme before page loaded.
-        (() => {
-            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
-            const isDark = currentTheme === 'dark';
-            const pagebody = document.getElementsByTagName('body')[0]
-            if (isDark) {
-                pagebody.classList.add('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
-            } else {
-                pagebody.classList.remove('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Light"
-            }
-        })();
-    </script>
 
     <div class="static-banner">
         Please be patient in case of lag
     </div>
     <div class="marquee">
         <div class="marquee-content">
-            Welcome to czxieddan.top  |  Current version v0.1.0-alpha  |  The "Store" feature will be available in v0.2.0-alpha  |  
+            Welcome to czxieddan.top              Current version v0.1.0-alpha              The "Store" feature will be available in v0.2.0-alpha              
         </div>
     </div>
 
