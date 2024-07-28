@@ -86,6 +86,34 @@
     
 
 
+
+    <style>
+        .static-banner {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            color: #333;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
@@ -106,6 +134,15 @@
             }
         })();
     </script>
+
+    <div class="static-banner">
+        Please be patient in case of lag
+    </div>
+    <div class="marquee">
+        <div class="marquee-content">
+            Welcome to czxieddan.top  |  Current version v0.1.0-alpha  |  The "Store" feature will be available in v0.2.0-alpha  |  
+        </div>
+    </div>
 
 <script>
 <!--
