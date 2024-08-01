@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
+    <style>
+        #image-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="displayed-image" src="" alt="展示图片">
+    </div>
+    <div class="button-container">
+        <button onclick="prevImage()">上一张</button>
+        <button onclick="nextImage()">下一张</button>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        let images = [];
+        const imageDirectory = 'https://czxieddan.top/czshop/images/'; // 修改此处以匹配你的图片目录
+
+        // 读取目录中的所有图片文件
+        fetch(imageDirectory)
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const htmlDoc = parser.parseFromString(data, 'text/html');
+                const links = htmlDoc.querySelectorAll('a');
+                links.forEach(link => {
+                    if (link.href.endsWith('.jpg')) {
+                        images.push(link.href);
+                    }
+                });
+                if (images.length > 0) {
+                    updateImage();
+                }
+            });
+
+        function updateImage() {
+            const imageElement = document.getElementById('displayed-image');
+            imageElement.src = images[currentImageIndex];
+        }
+
+        function prevImage() {
+            if (currentImageIndex > 0) {
+                currentImageIndex--;
+            } else {
+                currentImageIndex = images.length - 1;
+            }
+            updateImage();
+        }
+
+        function nextImage() {
+            if (currentImageIndex < images.length - 1) {
+                currentImageIndex++;
+            } else {
+                currentImageIndex = 0;
+            }
+            updateImage();
+        }
+    </script>
+</body>
+</html>
