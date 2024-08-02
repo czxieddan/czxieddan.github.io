@@ -51,13 +51,13 @@
 
         // 上一张按钮点击事件
         prevBtn.onclick = function () {
-            currentPage = (currentPage - 1) % imageUrls.length;
+            currentPage = (currentPage - 1 + imageUrls.length) % imageUrls.length;
             img.setAttribute("src", imageUrls[currentPage]);
         };
 
         // 下一张按钮点击事件
         nextBtn.onclick = function () {
-            currentPage = ((currentPage - 1 + imageUrls.length) % imageUrls.length;
+            currentPage = (currentPage + 1) % imageUrls.length;
             img.setAttribute("src", imageUrls[currentPage]);
         };
     </script>
