@@ -10,7 +10,7 @@
             margin-top: 50px;
         }
         #image-container img {
-            width: 500px;
+            max-width: 100%;
             height: auto;
         }
         .button-container {
@@ -24,13 +24,12 @@
     </style>
 </head>
 <body>
-    <div id="image-container">
+    <div class="container">
         <img id="imageDisplay" src="https://czxieddan.top/czshop/images/img01.jpg">
-    </div>
-    <div class="button-container">
-    <button onclick="prev">上一张</button>
-    <button onclick="next">下一张</button>
-
+    <div class="buttons">
+    <button id="prev">上一张</button>
+    <button id="next">下一张</button>
+        </div>
     </div>
 
     <script>
@@ -47,11 +46,11 @@
             // 添加更多图片链接...
         ];
 
-        let currentPage = 0;
+        
 
         // 上一张按钮点击事件
         prevBtn.onclick = function () {
-            currentPage = (currentPage - 1 + imageUrls.length) % imageUrls.length;
+            currentPage = (currentPage - 1) % imageUrls.length;
             img.setAttribute("src", imageUrls[currentPage]);
         };
 
