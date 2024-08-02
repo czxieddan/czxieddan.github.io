@@ -10,7 +10,7 @@
             margin-top: 50px;
         }
         #image-container img {
-            max-width: 100%;
+            max-width: 500px;
             height: auto;
         }
         .button-container {
@@ -46,7 +46,7 @@
             // 添加更多图片链接...
         ];
 
-        let currentPage = 0;
+        let currentPage = 1;
 
         fetch(imageUrls)
             .then(response => response.text())
