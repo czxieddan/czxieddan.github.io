@@ -24,19 +24,19 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div id="image-container">
         <img id="imageDisplay" src="https://czxieddan.top/czshop/images/img01.jpg">
-    <div class="buttons">
-    <button id="prev">上一张</button>
-    <button id="next">下一张</button>
-        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="prevImage()">上一张</button>
+        <button onclick="nextImage()">下一张</button>
     </div>
 
     <script>
         // 获取DOM对象
-        const img = document.getElementById("imageDisplay");
-        const prevBtn = document.getElementById("prev");
-        const nextBtn = document.getElementById("next");
+        
+        //const prevBtn = document.getElementById("prev");
+        //const nextBtn = document.getElementById("next");
 
         // 图片链接目录
         const imageUrls = [
@@ -46,19 +46,58 @@
             // 添加更多图片链接...
         ];
 
-        
+        let currentPage = 0;
+
+        fetch(imageUrls)
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const htmlDoc = parser.parseFromString(data, 'text/html');
+                const links = htmlDoc.querySelectorAll('a');
+                links.forEach(link => {
+                    if (link.href.endsWith('.jpg')) {
+                        images.push(link.href);
+                    }
+                });
+                if (imageUrls.length > 0) {
+                    updateImage();
+                }
+            });
+
+        function updateImage() {
+            const img = document.getElementById('imageDisplay');
+            img.src = imageUrls[currentPage];
+        }
 
         // 上一张按钮点击事件
-        prevBtn.onclick = function () {
-            currentPage = (currentPage - 1) % imageUrls.length;
-            img.setAttribute("src", imageUrls[currentPage]);
-        };
+        function prevImage() {
+            if (currentPage > 0) {
+                currentPage--;
+            } else {
+                currentPage = imageUrls.length - 1;
+            }
+            updateImage();
+        }
+        
+        //prevBtn.onclick = function () {
+            //currentPage = (currentPage - 1) % imageUrls.length;
+            //img.setAttribute("src", imageUrls[currentPage]);
+        //};
 
         // 下一张按钮点击事件
-        nextBtn.onclick = function () {
-            currentPage = (currentPage + 1) % imageUrls.length;
-            img.setAttribute("src", imageUrls[currentPage]);
-        };
+        function nextImage() {
+            if (currentPage < imageUrls.length - 1) {
+                currentPage++;
+            } else {
+                currentPage = 0;
+            }
+            updateImage();
+        }
+        
+        //nextBtn.onclick = function () {
+            //currentPage = (currentPage + 1) % imageUrls.length;
+            //img.setAttribute("src", imageUrls[currentPage]);
+        //};
     </script>
 </body>
 </html>
