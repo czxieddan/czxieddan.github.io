@@ -3,7 +3,6 @@
 
 [_**czxieddan.top**(backup)_](https://czxieddan.github.io)
 ## czxieddan.github.io
-<img src="https://github.com/czxieddan/czxieddan.github.io/blob/main/pictures/main/github/czxieddan/png/photos/en_to_u_Moningu_giku.png" alt="en_to_u_Moningu_giku" width="666" height="1000" align="right" />
 
 _CzXDd_
 
