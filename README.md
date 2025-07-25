@@ -41,7 +41,7 @@ I would like to thank the providers of the above open source projects.
 - Find solutions in [troubleshooting](https://hexo.io/docs/troubleshooting.html)
 - Join discussion on [Google Group](https://groups.google.com/group/hexo), [Discord](https://discord.gg/teM2Anj), [Gitter](https://gitter.im/hexojs/hexo) or [Telegram](https://t.me/hexojs)
 - See the [plugin list](https://hexo.io/plugins/) and the [theme list](https://hexo.io/themes/) on wiki
-- 关注 [@hexojs](https://twitter.com/hexojs) for latest news
+- [@hexojs](https://twitter.com/hexojs) for latest news
 
 ### License
 
@@ -81,7 +81,3 @@ An elegant, powerful, easy-to-read Hexo theme.
 Chic © [@Sirice](https://github.com/Siricee)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-
-## czxieddan/czxieddan.github.io
-_czxiddan_
