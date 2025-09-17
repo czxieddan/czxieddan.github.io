@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="czxieddan">
+  <link rel="stylesheet" href="/css/iconfont/iconfont.css">
+  <title>商品编辑器</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js"></script>
+  <script src="/js/tocbot.min.js"></script>
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, button, textarea { margin: 5px; }
+    textarea { width: 100%; height: 80px; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <script>
+    (() => {
+      const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+      const isDark = currentTheme === 'dark';
+      const pagebody = document.getElementsByTagName('body')[0]
+      if (isDark) {
+        pagebody.classList.add('dark-theme');      
+          document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+        } else {
+          pagebody.classList.remove('dark-theme');
+          document.getElementById("mobile-toggle-theme").innerText = "· Light"
+        }
+    })();
+  </script>
+  <script>
+    !
+    function() {
+      function n(n, e, t) {
+        return n.getAttribute(e) || t
+      }
+      function e(n) {
+        return document.getElementsByTagName(n)
+      }
+      function t() {
+        var t = e("script"),
+        o = t.length,
+        i = t[o - 1];
+        return {
+          l: o,
+          z: n(i, "zIndex", -1),     //置于主页面背后
+          o: n(i, "opacity", .5),     //线条透明度
+          c: n(i, "color", "0,0,0"),  //线条颜色
+          n: n(i, "count", 100)    //线条数量
+        }
+      }
+      function o() {
+        a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+        c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+      }
+      function i() {
+        r.clearRect(0, 0, a, c);
+        var n, e, t, o, m, l;
+        s.forEach(function(i, x) {
+          for (i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++) n = u[e],
+          null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y, l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m), t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
+        }),
+        x(i)
+      }
+      var a, c, u, m = document.createElement("canvas"),
+      d = t(),
+      l = "c_n" + d.l,
+      r = m.getContext("2d"),
+      x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+      function(n) {
+        window.setTimeout(n, 1e3 / 45)
+      },
+      w = Math.random,
+      y = {
+        x: null,
+        y: null,
+        max: 2e4
+      };
+      m.id = l,
+      m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o,
+      e("body")[0].appendChild(m),
+      o(),
+      window.onresize = o,
+      window.onmousemove = function(n) {
+        n = n || window.event,
+        y.x = n.clientX,
+        y.y = n.clientY
+      },
+      window.onmouseout = function() {
+        y.x = null,
+        y.y = null
+      };
+      for (var s = [], f = 0; d.n > f; f++) {
+        var h = w() * a,
+        g = w() * c,
+        v = 2 * w() - 1,
+        p = 2 * w() - 1;
+        s.push({
+          x: h,
+          y: g,
+          xa: v,
+          ya: p,
+          max: 6e3
+        })
+      }
+      u = s.concat([y]),
+      setTimeout(function() {
+        i()
+      },
+      100)
+    } ();
+  </script>
+  <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">czxieddan&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">czxieddan&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+  </header>
+  <script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+  </script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+  </div>
+  <h2>🛒 商品编辑器</h2>
+
+  <input type="text" id="name" placeholder="商品名">
+  <input type="text" id="price" placeholder="价格（可为负）">
+  <input type="text" id="limit" placeholder="限购数量（整数）">
+  <button onclick="addItem()">添加商品</button>
+
+  <ul id="itemList"></ul>
+
+  <h3>📥 导入旧商店ID</h3>
+  <textarea id="importInput" placeholder="粘贴旧商店ID..."></textarea>
+  <button onclick="importStoreId()">导入商品</button>
+
+  <h3>📤 生成商店ID</h3>
+  <button onclick="generateStoreId()">生成商店ID</button>
+  <textarea id="storeIdOutput" readonly placeholder="商店ID将显示在此..."></textarea>
+  <button onclick="copyStoreId()">复制商店ID</button>
+
+  <script>
+    let items = [];
+
+    function base64Encode(str) {
+      return btoa(unescape(encodeURIComponent(str)));
+    }
+
+    function base64Decode(str) {
+      try {
+        return decodeURIComponent(escape(atob(str)));
+      } catch {
+        return '';
+      }
+    }
+
+    function clearInputs() {
+      document.getElementById('name').value = '';
+      document.getElementById('price').value = '';
+      document.getElementById('limit').value = '';
+      document.getElementById('name').focus();
+    }
+
+    function addItem() {
+      const name = document.getElementById('name').value.trim();
+      const price = parseFloat(document.getElementById('price').value.trim());
+      const limit = parseInt(document.getElementById('limit').value.trim());
+
+      if (!name || !isFinite(price) || !Number.isInteger(limit)) {
+        alert('请填写有效的商品信息');
+        return;
+      }
+
+      if (items.some(item => item.name === name)) {
+        alert('不能添加重复商品名');
+        return;
+      }
+
+      items.push({ name, price, limit });
+      renderItems();
+      clearInputs(); // ✅ 自动清空输入栏
+    }
+
+    function renderItems() {
+      const list = document.getElementById('itemList');
+      list.innerHTML = '';
+      items.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `${item.name} - ¥${item.price} - 限购${item.limit} 
+          <button onclick="editItem(${index})">修改</button>
+          <button onclick="deleteItem(${index})">删除</button>`;
+        list.appendChild(li);
+      });
+    }
+
+    function editItem(index) {
+      const item = items[index];
+      document.getElementById('name').value = item.name;
+      document.getElementById('price').value = item.price;
+      document.getElementById('limit').value = item.limit;
+      deleteItem(index);
+    }
+
+    function deleteItem(index) {
+      items.splice(index, 1);
+      renderItems();
+    }
+
+    function generateStoreId() {
+      const raw = items.map(item => {
+        const encodedName = base64Encode(item.name);
+        return `${encodedName}?${item.price}?${item.limit}`;
+      }).join('|');
+      const encoded = base64Encode(raw);
+      document.getElementById('storeIdOutput').value = encoded;
+    }
+
+    function importStoreId() {
+      const input = document.getElementById('importInput').value.trim();
+      if (!input) return alert('请输入商店ID');
+      const decoded = base64Decode(input);
+      const entries = decoded.split('|');
+      let added = 0;
+
+      entries.forEach(entry => {
+        const parts = entry.split('?');
+        if (parts.length !== 3) return;
+        const name = base64Decode(parts[0]);
+        const price = parseFloat(parts[1]);
+        const limit = parseInt(parts[2]);
+        if (!name || !isFinite(price) || !Number.isInteger(limit)) return;
+        if (items.some(item => item.name === name)) return;
+        items.push({ name, price, limit });
+        added++;
+      });
+
+      renderItems();
+      alert(`成功导入 ${added} 个商品`);
+    }
+
+    function copyStoreId() {
+      const text = document.getElementById('storeIdOutput');
+      text.select();
+      document.execCommand('copy');
+      alert('已复制商店ID');
+    }
+  </script>
+  <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© czxieddan | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+  </footer>
+    <button id="play-audio" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Ciallo～(∠・ω< )⌒★</button>
+  <script>
+    var audio = new Audio('https://czxieddan.top/audio/ciallo.mp3'); // 替换为您的音频文件URL
+    document.getElementById('play-audio').addEventListener('click', function() {
+      audio.play();
+    });
+  </script>
+</body>
+</html>

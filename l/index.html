@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="czxieddan">
+  <link rel="stylesheet" href="/css/iconfont/iconfont.css">
+  <title>账单解析工具</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js"></script>
+  <script src="/js/tocbot.min.js"></script>
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, button, textarea { margin: 5px; }
+    textarea { width: 100%; height: 80px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+  </style>
+</head>
+<body>
+  <script>
+    (() => {
+      const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+      const isDark = currentTheme === 'dark';
+      const pagebody = document.getElementsByTagName('body')[0]
+      if (isDark) {
+        pagebody.classList.add('dark-theme');      
+          document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+        } else {
+          pagebody.classList.remove('dark-theme');
+          document.getElementById("mobile-toggle-theme").innerText = "· Light"
+        }
+    })();
+  </script>
+  <script>
+    !
+    function() {
+      function n(n, e, t) {
+        return n.getAttribute(e) || t
+      }
+      function e(n) {
+        return document.getElementsByTagName(n)
+      }
+      function t() {
+        var t = e("script"),
+        o = t.length,
+        i = t[o - 1];
+        return {
+          l: o,
+          z: n(i, "zIndex", -1),     //置于主页面背后
+          o: n(i, "opacity", .5),     //线条透明度
+          c: n(i, "color", "0,0,0"),  //线条颜色
+          n: n(i, "count", 100)    //线条数量
+        }
+      }
+      function o() {
+        a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+        c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+      }
+      function i() {
+        r.clearRect(0, 0, a, c);
+        var n, e, t, o, m, l;
+        s.forEach(function(i, x) {
+          for (i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++) n = u[e],
+          null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y, l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m), t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
+        }),
+        x(i)
+      }
+      var a, c, u, m = document.createElement("canvas"),
+      d = t(),
+      l = "c_n" + d.l,
+      r = m.getContext("2d"),
+      x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+      function(n) {
+        window.setTimeout(n, 1e3 / 45)
+      },
+      w = Math.random,
+      y = {
+        x: null,
+        y: null,
+        max: 2e4
+      };
+      m.id = l,
+      m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o,
+      e("body")[0].appendChild(m),
+      o(),
+      window.onresize = o,
+      window.onmousemove = function(n) {
+        n = n || window.event,
+        y.x = n.clientX,
+        y.y = n.clientY
+      },
+      window.onmouseout = function() {
+        y.x = null,
+        y.y = null
+      };
+      for (var s = [], f = 0; d.n > f; f++) {
+        var h = w() * a,
+        g = w() * c,
+        v = 2 * w() - 1,
+        p = 2 * w() - 1;
+        s.push({
+          x: h,
+          y: g,
+          xa: v,
+          ya: p,
+          max: 6e3
+        })
+      }
+      u = s.concat([y]),
+      setTimeout(function() {
+        i()
+      },
+      100)
+    } ();
+  </script>
+  <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">czxieddan&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">czxieddan&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+  </header>
+  <script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+  </script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+  </div>
+  <h2>📄 账单解析工具</h2>
+
+  <label>粘贴商店ID：</label>
+  <textarea id="storeIdInput" placeholder="粘贴商店ID..."></textarea>
+  <label>粘贴账单ID：</label>
+  <textarea id="billIdInput" placeholder="粘贴账单ID..."></textarea>
+  <button onclick="parseBill()">解析账单</button>
+
+  <table id="billTable">
+    <thead>
+      <tr>
+        <th>商品名</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>总金额：¥<span id="totalAmount">0</span></h3>
+
+  <button onclick="copyResult()">复制账单明细</button>
+  <textarea id="resultOutput" readonly placeholder="账单明细将显示在此..."></textarea>
+
+  <script>
+    let productMap = {};
+
+    function base64Decode(str) {
+      try {
+        return decodeURIComponent(escape(atob(str)));
+      } catch {
+        return '';
+      }
+    }
+
+    function parseStoreId() {
+      const input = document.getElementById('storeIdInput').value.trim();
+      if (!input) return {};
+      const decoded = base64Decode(input);
+      const entries = decoded.split('|');
+      const map = {};
+
+      entries.forEach(entry => {
+        const parts = entry.split('?');
+        if (parts.length !== 3) return;
+        const encodedName = parts[0];
+        const name = base64Decode(encodedName);
+        const price = parseFloat(parts[1]);
+        const limit = parseInt(parts[2]);
+        if (!name || !isFinite(price)) return;
+        map[encodedName] = { name, price, limit };
+      });
+
+      return map;
+    }
+
+    function parseBill() {
+      productMap = parseStoreId();
+      const billInput = document.getElementById('billIdInput').value.trim();
+      if (!billInput) return alert('请输入账单ID');
+      const decoded = base64Decode(billInput);
+      const entries = decoded.split('|');
+      const tbody = document.querySelector('#billTable tbody');
+      const result = [];
+      let total = 0;
+      tbody.innerHTML = '';
+
+      entries.forEach(entry => {
+        const parts = entry.split('-');
+        if (parts.length !== 2) return;
+        const encodedName = parts[0];
+        const qty = parseInt(parts[1]);
+        const product = productMap[encodedName];
+        if (!product || !Number.isInteger(qty)) return;
+
+        const subtotal = product.price * qty;
+        total += subtotal;
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${product.name}</td>
+          <td>¥${product.price}</td>
+          <td>${qty}</td>
+          <td>¥${subtotal.toFixed(2)}</td>
+        `;
+        tbody.appendChild(row);
+
+        result.push(`${product.name} × ${qty} @ ¥${product.price} = ¥${subtotal.toFixed(2)}`);
+      });
+
+      document.getElementById('totalAmount').textContent = total.toFixed(2);
+      document.getElementById('resultOutput').value = result.join('\n') + `\n总金额：¥${total.toFixed(2)}`;
+    }
+
+    function copyResult() {
+      const text = document.getElementById('resultOutput');
+      text.select();
+      document.execCommand('copy');
+      alert('已复制账单明细');
+    }
+  </script>
+  <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© czxieddan | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+  </footer>
+    <button id="play-audio" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Ciallo～(∠・ω< )⌒★</button>
+  <script>
+    var audio = new Audio('https://czxieddan.top/audio/ciallo.mp3'); // 替换为您的音频文件URL
+    document.getElementById('play-audio').addEventListener('click', function() {
+      audio.play();
+    });
+  </script>
+</body>
+</html>
