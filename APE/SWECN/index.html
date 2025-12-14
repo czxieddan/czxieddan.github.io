@@ -366,31 +366,28 @@ function() {
 
         <audio id="bgm" src="music/APEMainTheme.ogg" loop preload="auto" style="display:none;"></audio>
         <script>
-            function unmuteBGM() {
-                var audio = document.getElementById('bgm');
-                audio.muted = false;
-                audio.play().catch(()=>{});
-                document.removeEventListener('click', unmuteBGM);
-                document.removeEventListener('touchstart', unmuteBGM);
-                document.removeEventListener('keydown', unmuteBGM);
-            }
-            window.addEventListener('DOMContentLoaded', function() {
-                var audio = document.getElementById('bgm');
-                audio.play().catch(()=>{});
-                document.addEventListener('click', unmuteBGM);
-                document.addEventListener('touchstart', unmuteBGM);
-                document.addEventListener('keydown', unmuteBGM);
-            });
-            document.addEventListener('WeixinJSBridgeReady', function() {
-                var audio = document.getElementById('bgm');
-                audio.muted = false;
-                audio.play().catch(()=>{});
-            });
-            document.addEventListener('YixinJSBridgeReady', function() {
-                var audio = document.getElementById('bgm');
-                audio.muted = false;
-                audio.play().catch(()=>{});
-            });
+let audio;
+
+async function startBGM() {
+  try {
+    if (!audio) {
+      audio = new Audio('music/APEMainTheme.ogg');
+      audio.loop = true;
+      audio.preload = 'auto';
+    }
+    await audio.play();
+    document.removeEventListener('click', startBGM);
+    document.removeEventListener('touchstart', startBGM);
+    document.removeEventListener('keydown', startBGM);
+    console.log('[BGM] started');
+  } catch (e) {
+    console.log('[BGM] failed:', e);
+  }
+}
+
+document.addEventListener('click', startBGM);
+document.addEventListener('touchstart', startBGM);
+document.addEventListener('keydown', startBGM);
         </script>
 
 </body>
