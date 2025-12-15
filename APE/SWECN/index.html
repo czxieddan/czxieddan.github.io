@@ -371,7 +371,7 @@ function() {
         async function startBGM() {
             try {
                 if (!audio) {
-                    audio = bgm('https://czxieddan.top/APE/SWECN/music/APEMainTheme.mp3');
+                    audio = new Audio('https://czxieddan.top/APE/SWECN/music/APEMainTheme.mp3');
                     audio.loop = true;
                     audio.preload = 'auto';
                 }
