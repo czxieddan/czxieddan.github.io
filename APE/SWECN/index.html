@@ -158,6 +158,31 @@ function() {
 } ();
 </script>
 
+    <script>
+        let audio;
+
+        async function startBGM() {
+            try {
+                if (!audio) {
+                    audio = new Audio('https://czxieddan.top/APE/SWECN/music/APEMainTheme.mp3');
+                    audio.loop = true;
+                    audio.preload = 'auto';
+                }
+            await audio.play();
+                document.removeEventListener('click', startBGM);
+                document.removeEventListener('touchstart', startBGM);
+                document.removeEventListener('keydown', startBGM);
+                console.log('[BGM] started');
+            } catch (e) {
+                console.log('[BGM] failed:', e);
+            }
+        }
+
+        document.addEventListener('click', startBGM);
+        document.addEventListener('touchstart', startBGM);
+        document.addEventListener('keydown', startBGM);
+    </script>
+
     <div class="wrapper">
         <header>
     <nav class="navbar">
@@ -363,31 +388,6 @@ function() {
 
 
     </div>
-
-    <script>
-        let audio;
-
-        async function startBGM() {
-            try {
-                if (!audio) {
-                    audio = new Audio('https://czxieddan.top/APE/SWECN/music/APEMainTheme.mp3');
-                    audio.loop = true;
-                    audio.preload = 'auto';
-                }
-            await audio.play();
-                document.removeEventListener('click', startBGM);
-                document.removeEventListener('touchstart', startBGM);
-                document.removeEventListener('keydown', startBGM);
-                console.log('[BGM] started');
-            } catch (e) {
-                console.log('[BGM] failed:', e);
-            }
-        }
-
-        document.addEventListener('click', startBGM);
-        document.addEventListener('touchstart', startBGM);
-        document.addEventListener('keydown', startBGM);
-    </script>
 
 </body>
 </html>
