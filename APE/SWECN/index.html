@@ -364,31 +364,31 @@ function() {
 
     </div>
 
-        <audio id="bgm" src="music/APEMainTheme.ogg" loop preload="auto" style="display:none;"></audio>
-        <script>
-let audio;
+    <audio id="bgm" src="https://czxieddan.top/APE/SWECN/music/APEMainTheme.mp3" loop preload="auto" style="display:none;"></audio>
+    <script>
+        let audio;
 
-async function startBGM() {
-  try {
-    if (!audio) {
-      audio = new Audio('music/APEMainTheme.ogg');
-      audio.loop = true;
-      audio.preload = 'auto';
-    }
-    await audio.play();
-    document.removeEventListener('click', startBGM);
-    document.removeEventListener('touchstart', startBGM);
-    document.removeEventListener('keydown', startBGM);
-    console.log('[BGM] started');
-  } catch (e) {
-    console.log('[BGM] failed:', e);
-  }
-}
+        async function startBGM() {
+            try {
+                if (!audio) {
+                    audio = bgm('https://czxieddan.top/APE/SWECN/music/APEMainTheme.mp3');
+                    audio.loop = true;
+                    audio.preload = 'auto';
+                }
+            await audio.play();
+                document.removeEventListener('click', startBGM);
+                document.removeEventListener('touchstart', startBGM);
+                document.removeEventListener('keydown', startBGM);
+                console.log('[BGM] started');
+            } catch (e) {
+                console.log('[BGM] failed:', e);
+            }
+        }
 
-document.addEventListener('click', startBGM);
-document.addEventListener('touchstart', startBGM);
-document.addEventListener('keydown', startBGM);
-        </script>
+        document.addEventListener('click', startBGM);
+        document.addEventListener('touchstart', startBGM);
+        document.addEventListener('keydown', startBGM);
+    </script>
 
 </body>
 </html>
