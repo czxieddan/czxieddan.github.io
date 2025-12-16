@@ -115,28 +115,14 @@
                 100)
             } ();
         </script>
-        <script>
-            let audio;
-                async function startBGM() {
-                try {
-                    if (!audio) {
-                        audio = new Audio('https://czxieddan.top/APE/SWECN/music/APEMainTheme.mp3');
-                        audio.loop = true;
-                        audio.preload = 'auto';
-                    }
-                await audio.play();
-                    document.removeEventListener('click', startBGM);
-                    document.removeEventListener('touchstart', startBGM);
-                    document.removeEventListener('keydown', startBGM);
-                    console.log('[BGM] started');
-                } catch (e) {
-                    console.log('[BGM] failed:', e);
-                }
-            }
-            document.addEventListener('click', startBGM);
-            document.addEventListener('touchstart', startBGM);
-            document.addEventListener('keydown', startBGM);
-        </script>
+		<script type="text/javascript">
+    		window.onload = function() {
+      		    var audio = new Audio('https://czxieddan.top/APE/DevLog/SWEzh/music/APEMainTheme.mp3');
+				audio.loop = true;
+                audio.preload = 'auto';
+				audio.play();
+    		}
+ 		</script>
         <div class="wrapper">
             <header>
                 <nav class="navbar">
@@ -243,12 +229,8 @@
                             <h1 class="post-title">&#x897f;&#x6b27;&#x5c40;&#x52bf;&#160;&#124;&#160;&#65;&#80;&#69;&#58;&#82;&#73;&#80;&#160;&#x5f00;&#x53d1;&#x65e5;&#x5fd7;</h1>            
                             <div class="post-meta">
                                 Author: <a itemprop="author" rel="author" href="/">&#84;&#101;&#97;&#109;&#160;&#65;&#80;&#69;&#58;&#82;&#73;&#80;</a>                                       
-                                <span class="post-time">
-                                    Date: <a href="#">December 14, 2025&nbsp;&nbsp;23:59:59</a>
-                                </span>                          
-                                <span class="post-category">
-                                    Category:<a href="/categories/APE%3aRIP">&#160;&#65;&#80;&#69;&#58;&#82;&#73;&#80;</a>
-                                </span>                    
+                                <span class="post-time">Date: <a href="#">December 16, 2025&nbsp;&nbsp;23:59:59</a></span>                          
+                                <span class="post-category">Category:<a href="/APE/categories/APE%3aRIP">&#160;&#65;&#80;&#69;&#58;&#82;&#73;&#80;</a></span>                    
                             </div>
                         </header>
                         <div class="post-content">
@@ -259,22 +241,21 @@
 								</div>
                             </p>
 							<h1 id="1-日志简述"><a href="#1-日志简述" class="headerlink" title="1. 日志简述"></a>1. 日志简述</h2><ul>
-								<h2 id="1-初来乍到"><a href="#1-初来乍到" class="headerlink" title="1. 初来乍到"></a>1. 初来乍到</h2><ul>
-                                    <p>这是我们初次公开发布本作<i>(A Pathetic Epoch:Rejuvenation In Purgatory)</i>的制作内容，可能有诸多疏漏与缺陷有待改进，还望多多谅解并予我们建议反馈。</p>
-									<p>本次内容篇幅可能稍长，因为我们需要在对内容的介绍中夹杂部分对我们作品世界观设定的介绍。为了不让您变得无聊，我们为该页面播放了一首本作内某地区的主题曲<em>(我们会不定期为当前界面替换音频)</em>，如果您并不喜欢它可以将其关闭。</p>
-									<p>我们深知许多人并没有曾了解过我们的世界观，许多背景故事设定可能令人感到陌生。如果您对此很感兴趣，可以点击下方的按钮跳转到我们的世界观介绍页面。
-										<div align="center">
-											<button id="jumpBtn1" style="padding: 10px 20px; background-color: #ff3c19; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">正在维护……</button>
-                    						<script>
-                        						document.getElementById('jumpBtn1').addEventListener('click', function()  {
-                           						    window.location.href = "https://czxieddan.top/APE/BS";
-                       					  	    });
-                    						</script>
-										</div>
-									</p>
-                                </ul>
+                                <p>这是我们初次公开发布本作<i>(A Pathetic Epoch:Rejuvenation In Purgatory)</i>的制作内容，可能有诸多疏漏与缺陷有待改进，还望多多谅解并予我们建议反馈。</p>
+	    						<p>本次内容篇幅可能稍长，因为我们需要在对内容的介绍中夹杂部分对我们作品世界观设定的介绍。为了不让您变得无聊，我们为该页面播放了一首本作内某地区的主题曲<em>(我们会不定期为当前界面替换音频)</em>，如果您并不喜欢它可以将其关闭。</p>
+								<p>我们深知许多人并没有曾了解过我们的世界观，许多背景故事设定可能令人感到陌生。如果您对此很感兴趣，可以点击下方的按钮跳转到我们的世界观介绍页面。
+									<div align="center">
+										<button id="jumpBtn1" style="padding: 10px 20px; background-color: #ff3c19; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">正在维护……</button>
+                   						<script>
+                       						document.getElementById('jumpBtn1').addEventListener('click', function()  {
+                       						    window.location.href = "https://czxieddan.top/APE/BS";
+                   					  	    });
+                    					</script>
+									</div>
+								</p>
 							</ul>
 							<h1 id="2-日志正文"><a href="#2-日志正文" class="headerlink" title="2. 日志正文"></a>2. 日志正文</h2><ul>
+							    <p>让我们进入正题。</p>
                                 <h2 id="1-局势概述"><a href="#1-局势概述" class="headerlink" title="1. 局势概述"></a>1. 局势概述</h2><ul>
                                     <p>我还没有编好。</p>
                                 </ul>
@@ -309,7 +290,7 @@
             </div>
             <footer id="footer" class="footer">
                 <div class="copyright">
-                    <span>© czxieddan | A Pathetic Epoch:Rejuvenation In Purgatory | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+                    <span><a href="https://czxieddan.top" target="_blank">© CzXieDdan</a> | <a href="https://czxieddan.top/APE/home" target="_blank">A Pathetic Epoch:Rejuvenation In Purgatory</a> | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
                 </div>
             </footer>
         </div>
