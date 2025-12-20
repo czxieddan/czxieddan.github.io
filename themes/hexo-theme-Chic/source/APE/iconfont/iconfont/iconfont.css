@@ -122,3 +122,7 @@
 .icon-github:before {
   content: "\e88d";
 }
+
+.icon-discord:before {
+  content: "\e7b2";
+}
