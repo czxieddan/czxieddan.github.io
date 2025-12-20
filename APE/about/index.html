@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="czxieddan">
+        <link rel="stylesheet" href="/css/iconfont/iconfont.css">
+        <title>About&#160;&#124;&#160;APE:RIP</title>
+        <link rel="icon" href="/APE/APESmIcon.webp">
+        <!-- stylesheets list from _config.yml -->
+        <link rel="stylesheet" href="style.css">
+        <!-- scripts list from _config.yml -->
+        <script src="/js/script.js"></script>
+        <script src="/js/tocbot.min.js"></script>
+        <meta name="generator" content="Hexo 7.3.0">
+	</head>
+    <body>
+        <script>
+            // this function is used to check current theme before page loaded.
+            (() => {
+                const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+                const isDark = currentTheme === 'dark';
+                const pagebody = document.getElementsByTagName('body')[0]
+                if (isDark) {
+                    pagebody.classList.add('dark-theme');
+                    // mobile
+                    document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+                } else {
+                    pagebody.classList.remove('dark-theme');
+                    // mobile
+                    document.getElementById("mobile-toggle-theme").innerText = "· Light"
+                }
+            })();
+        </script>
+        <script>
+            !function() {
+                    function n(n, e, t) {
+                    return n.getAttribute(e) || t
+                }
+                function e(n) {
+                    return document.getElementsByTagName(n)
+                }
+                function t() {
+                    var t = e("script"),
+                    o = t.length,
+                    i = t[o - 1];
+                    return {
+                        l: o,
+                        z: n(i, "zIndex", -1),     //置于主页面背后
+                        o: n(i, "opacity", .5),     //线条透明度
+                        c: n(i, "color", "0,0,0"),  //线条颜色
+                        n: n(i, "count", 100)    //线条数量
+                    }
+                }
+                function o() {
+                    a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                    c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+                }
+                function i() {
+                    r.clearRect(0, 0, a, c);
+                    var n, e, t, o, m, l;
+                    s.forEach(function(i, x) {
+                        for (i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++) n = u[e],
+                        null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y, l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m), t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
+                    }),
+                    x(i)
+                }
+                var a, c, u, m = document.createElement("canvas"),
+                d = t(),
+                l = "c_n" + d.l,
+                r = m.getContext("2d"),
+                x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                function(n) {
+                    window.setTimeout(n, 1e3 / 45)
+                },
+                w = Math.random,
+                y = {
+                    x: null,
+                    y: null,
+                    max: 2e4
+                };
+                m.id = l,
+                m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o,
+                e("body")[0].appendChild(m),
+                o(),
+                window.onresize = o,
+                window.onmousemove = function(n) {
+                    n = n || window.event,
+                    y.x = n.clientX,
+                    y.y = n.clientY
+                },
+                window.onmouseout = function() {
+                    y.x = null,
+                    y.y = null
+                };
+                for (var s = [], f = 0; d.n > f; f++) {
+                    var h = w() * a,
+                    g = w() * c,
+                    v = 2 * w() - 1,
+                    p = 2 * w() - 1;
+                    s.push({
+                        x: h,
+                        y: g,
+                        xa: v,
+                        ya: p,
+                        max: 6e3
+                    })
+                }
+                u = s.concat([y]),
+                setTimeout(function() {
+                    i()
+                },
+                100)
+            } ();
+        </script>
+        <div class="wrapper">
+            <header>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header header-logo"><a href="/APE">A Pathetic Epoch:Rejuvenation In Purgatory</a></div>
+                        <div class="menu navbar-right">
+                            <a class="menu-item" href="/APE/archives">Posts</a>
+                            <a class="menu-item" href="/APE/category">Categories</a>
+                            <a class="menu-item" href="/APE/tag">Tags</a>
+                            <a class="menu-item" href="/APE/about">About</a>
+                            <input id="switch_default" type="checkbox" class="switch_default">
+                            <label for="switch_default" class="toggleBtn"></label>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="navbar-mobile" id="nav-mobile">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <div>
+                                <a href="/APE">&#65;&#80;&#69;&#58;&#82;&#73;&#80;</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                            </div>
+                            <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+                        </div>
+                        <div class="menu" id="mobile-menu">              
+                            <a class="menu-item" href="/APE/archives">Posts</a>                
+                            <a class="menu-item" href="/APE/category">Categories</a>               
+                            <a class="menu-item" href="/APE/tag">Tags</a>               
+                            <a class="menu-item" href="/APE/about">About</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <script>
+                var mobileBtn = function f() {
+                    var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+                    var mobileMenu = document.getElementById("mobile-menu");
+                    if(toggleMenu.classList.contains("active")){
+                        toggleMenu.classList.remove("active")
+                        mobileMenu.classList.remove("active")
+                    }else{
+                        toggleMenu.classList.add("active")
+                        mobileMenu.classList.add("active")
+                    }
+                }
+            </script>
+            <div class="main">
+                <div class="container">
+                    <div class="post-toc">
+                        <div class="tocbot-list"></div>
+                        <div class="tocbot-list-menu">
+                            <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+                            <a onclick="go_top()">Back to top</a>
+                            <a onclick="go_bottom()">Go to bottom</a>
+                        </div>
+                    </div>
+                    <script>
+                        document.ready(
+                            function () {
+                                tocbot.init({
+                                    tocSelector: '.tocbot-list',
+                                    contentSelector: '.post-content',
+                                    headingSelector: 'h1, h2, h3, h4, h5',
+                                    collapseDepth: 1,
+                                    orderedList: false,
+                                    scrollSmooth: true,
+                                })
+                            }
+                        )
+                        function expand_toc() {
+                            var b = document.querySelector(".tocbot-toc-expand");
+                            tocbot.init({
+                                tocSelector: '.tocbot-list',
+                                contentSelector: '.post-content',
+                                headingSelector: 'h1, h2, h3, h4, h5',
+                                collapseDepth: 6,
+                                orderedList: false,
+                                scrollSmooth: true,
+                            });
+                            b.setAttribute("onclick", "collapse_toc()");
+                            b.innerHTML = "Collapse all"
+                        }
+                        function collapse_toc() {
+                            var b = document.querySelector(".tocbot-toc-expand");
+                            tocbot.init({
+                                tocSelector: '.tocbot-list',
+                                contentSelector: '.post-content',
+                                headingSelector: 'h1, h2, h3, h4, h5',
+                                collapseDepth: 1,
+                                orderedList: false,
+                                scrollSmooth: true,
+                            });
+                            b.setAttribute("onclick", "expand_toc()");
+                            b.innerHTML = "Expand all"
+                        }
+                        function go_top() {
+                            window.scrollTo(0, 0);
+                        }
+                        function go_bottom() {
+                            window.scrollTo(0, document.body.scrollHeight);
+                        }
+                    </script>
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">About&#160;&#124;&#160;APE:RIP</h1>            
+                            <div class="post-meta">                         
+                            </div>
+                        </header>
+                        <div class="post-content">
+							<h2 id="1-加入我们"><a href="#1-加入我们" class="headerlink" title="1. 加入我们"></a>1. 加入我们</h2><ul>
+								<p><em>(维护中。)</em></p>
+							</ul>
+                        </div>
+                        <section class="post-copyright">  
+                        </section>
+                    </article>
+                </div>
+            </div>
+            <footer id="footer" class="footer">
+                <div class="copyright">
+                    <span><a href="https://czxieddan.top" target="_blank">© CzXieDdan</a> | <a href="https://czxieddan.top/APE" target="_blank">A Pathetic Epoch:Rejuvenation In Purgatory</a> | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
