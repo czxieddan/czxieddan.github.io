@@ -1,5 +1,5 @@
 # Header
-navname: czxieddan's Blog
+navname: CzXieDdan's Blog
 
 # navigatior items
 nav:
@@ -12,10 +12,10 @@ nav:
 favicon: /favicon.ico
 
 # Profile
-nickname: czxieddan
+nickname: CzXieDdan
 
 ### this variable is MarkDown form.
-description: Keep in mind czxieddan meow.
+description: Keep in mind CzXieDdan meow.
 avatar: /image/czxieddan.jpg
 
 # main menu navigation
