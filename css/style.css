@@ -460,8 +460,6 @@ input[type="radio"]:not(:checked) + label:after {
 .icon-github:before {
   content: "\e88d";
 }
-
-
 .header-logo a {
   padding: 0;
 }
