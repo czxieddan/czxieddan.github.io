@@ -1,0 +1,30 @@
+{
+  "id": "5096108",
+  "name": "bilibili",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3506933",
+      "name": "github2",
+      "font_class": "github2",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "5052366",
+      "name": "bilibili",
+      "font_class": "bilibili",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "20647584",
+      "name": "icon_bilibili-circle",
+      "font_class": "icon_bilibili-circle",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
